@@ -11,6 +11,10 @@ http://localhost:3010/category/1
 
 http://localhost:3010/product/1
 
+### `npm install`
+
+Para instalar las dependencias del proyecto
+
 ### `npm start`
 
 Runs the app in the development mode.\
