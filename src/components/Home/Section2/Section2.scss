@@ -1,0 +1,18 @@
+@import "../../../css-config/mixins.scss";
+
+.section-2 {
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    margin-bottom: -5%;
+    @include md{
+        max-width: 1000px;
+    }
+
+    .mb-6{
+        margin: 0 auto;
+        width: 100%;
+        height: 80%;
+    }
+
+
+}

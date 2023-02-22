@@ -1,0 +1,33 @@
+@import "../../../css-config/mixins.scss";
+
+.shop-by-category{
+    max-width: calc(100% - 20px);
+    margin: 0 auto;
+    @include md{
+        max-width: 1000px;
+    }
+    .categories{
+        display: flex;
+        flex-flow: wrap;
+        gap:10px;
+        .category{
+            background-color: #000;
+            width: calc(50% - 5px);
+            cursor: pointer;
+            overflow: hidden;
+            @include md {
+                width: calc(25% - 10px);
+            }
+            img{
+                width: 100%;
+                display: block;
+                transition: all ease 0.3s;
+            }
+            &:hover{
+                img{
+                    transform: scale(1.2);
+                }
+            }
+        }
+    }
+}

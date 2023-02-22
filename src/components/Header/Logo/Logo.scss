@@ -1,0 +1,77 @@
+@import "../../../css-config/mixins.scss";
+
+.header-content{
+    padding-top: 3%;
+    padding-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    max-width: 1200px ;
+    margin: 0 auto;
+    @include md {
+        height: 40px;
+    }
+    .logo{
+        width: 15%;
+    }
+    .left{
+        list-style-type: none;
+        display: none;
+        gap: 25px;
+        @include md {
+            display: flex;
+        }
+    }
+    .right{
+        display: row;
+        gap: 20px;
+        .form{
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+            
+            input{
+                width: 50px;
+                height: 28px;
+                border: 1px solid rgba(0,0,0,0.2);
+                padding: 0 12px;
+                font-size: 16px;
+                @include md {
+                    width: 150px;
+                }
+            }
+            button{
+                outline: 0;
+                border: 0;
+                height: 30px;
+                width: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                font-size:16px;
+                color: #fff;
+                background-color: #8e2de2;
+                border-bottom: 3px solid;
+                @include md{
+                    width: 30px;
+                }
+    
+            }
+        }
+        @include md{
+            gap:25px;
+        }
+        svg{
+            font-size:20px;
+            cursor: pointer;
+            padding-top: 3px;
+            padding-bottom: 3px;
+            @include md {
+                padding-top: 5px;
+                font-size: 24px;
+            }
+        }
+    }
+}
