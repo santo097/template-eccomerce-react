@@ -1,4 +1,4 @@
-# Prueba tecnica ikatech solutions sas
+# eccomerce template developed in react
 
 1. Home
 http://localhost:3010
